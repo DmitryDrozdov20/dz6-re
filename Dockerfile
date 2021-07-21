@@ -1,6 +1,6 @@
 FROM tomcat:10.0.8-jdk16-openjdk-slim
 ENV BOXFUSE_WORK /home/boxfuse-sample-java-war-hello
-RUN apt-get update
+RUN apt-get update && apt-get install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 RUN apt-get install maven -y
 WORKDIR $BOXFUSE_WORK
