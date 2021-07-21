@@ -1,4 +1,4 @@
-FROM tomcat:10.0.8-jdk16-openjdk-slim
+FROM tomcat:10-jdk16-openjdk
 ENV BOXFUSE_WORK /home/boxfuse-sample-java-war-hello
 RUN apt-get update && apt-get install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
